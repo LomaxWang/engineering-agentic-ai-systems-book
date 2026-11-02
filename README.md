@@ -8,7 +8,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-**| [中文](https://github.com/datascale-ai/engineering-agentic-ai-systems-book/tree/main) | English |**
+**| 中文 | [English](README_en.md) |**
 
 > **在线阅读**：https://datascale-ai.github.io/engineering-agentic-ai-systems-book/
 
@@ -52,17 +52,6 @@
 ```
 
 这条主线既可以按顺序通读，也可以根据目标选择路径：基础篇建立共同语言，能力篇解释智能体如何完成任务，系统篇解决规模化运行问题，工程实践篇把概念落到代码、测试和部署。
-
-## 提案与书稿计划
-
-| 项目 | 当前基线 |
-| --- | --- |
-| Springer 图书类型 | Handbook |
-| 提案目录 | 第一至第八篇，第1—35章 |
-| 团队书稿骨架 | 九篇、39章；第九篇（第36—39章）为保留的工程实践扩展 |
-| 中文稿目标 | 2026年11月30日冻结 |
-| 英文稿安排 | 中文稿冻结后于12月批量翻译与审校 |
-| 计划提交 | 2026年12月30日提交 Springer |
 
 ## 目录结构
 

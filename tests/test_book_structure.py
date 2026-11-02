@@ -74,18 +74,16 @@ def test_mkdocs_config_and_python_project_metadata_are_valid():
 
 
 def test_public_book_metadata_matches_latest_proposal_and_manuscript_scope():
-    readme = (ROOT / "README.md").read_text(encoding="utf-8")
     zh = (DOCS / "zh" / "index.md").read_text(encoding="utf-8")
     en = (DOCS / "en" / "index.md").read_text(encoding="utf-8")
     config = yaml.safe_load((ROOT / "mkdocs.yml").read_text(encoding="utf-8"))
     english_site_name = config["plugins"][2]["i18n"]["languages"][1]["site_name"]
 
-    assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in readme
     assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in en
     assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" == english_site_name
     assert "智能体人工智能系统工程：从大语言模型到生产级智能体" in zh
     assert config["site_name"] == "智能体人工智能系统工程：从大语言模型到生产级智能体"
-    for page in (readme, zh, en):
+    for page in (zh, en):
         assert "2026年12月30日" in page or "December 30, 2026" in page
         assert "第九篇" in page or "Part IX" in page
         assert "提案" in page or "proposal" in page.lower()
