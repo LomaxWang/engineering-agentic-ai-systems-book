@@ -73,6 +73,22 @@ def test_mkdocs_config_and_python_project_metadata_are_valid():
     assert project["project"]["requires-python"] == ">=3.11"
 
 
+def test_public_book_metadata_matches_latest_proposal_and_manuscript_scope():
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    zh = (DOCS / "zh" / "index.md").read_text(encoding="utf-8")
+    en = (DOCS / "en" / "index.md").read_text(encoding="utf-8")
+    config = yaml.safe_load((ROOT / "mkdocs.yml").read_text(encoding="utf-8"))
+    english_site_name = config["plugins"][2]["i18n"]["languages"][1]["site_name"]
+
+    assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in readme
+    assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in en
+    assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" == english_site_name
+    for page in (readme, zh, en):
+        assert "2026年12月30日" in page or "December 30, 2026" in page
+        assert "第九篇" in page or "Part IX" in page
+        assert "提案" in page or "proposal" in page.lower()
+
+
 def test_sidebar_scroll_restore_script_targets_only_primary_navigation():
     script = (DOCS / "javascripts" / "extra.js").read_text(encoding="utf-8")
     assert ".md-sidebar--primary .md-sidebar__scrollwrap" in script

@@ -127,7 +127,7 @@ plugins:
         - locale: en
           name: English
           build: true
-          site_name: "Agentic AI Systems: From Large Language Models to Real-World Agents"
+          site_name: "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents"
           theme:
             language: en
           nav:

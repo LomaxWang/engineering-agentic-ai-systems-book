@@ -1,8 +1,8 @@
-# Agentic AI Systems: From Large Language Models to Real-World Agents
+# Engineering Agentic AI Systems: From LLMs to Production-Grade Agents
 
 ## Book Overview
 
-This site is the English translation workspace for a practical and research-oriented book on agentic AI systems. It follows the Chinese source manuscript and covers model interaction, planning, tools, memory, multi-agent systems, runtimes, evaluation, governance, testing, and deployment practice.
+This Handbook presents a systems-engineering framework for designing, evaluating, deploying, and governing agentic AI systems. The Springer proposal outline covers Parts I–VIII and Chapters 1–35. The team manuscript plan retains Part IX (Chapters 36–39) as an engineering-practice extension covering a reference implementation, runnable code, testing, and deployment drills. The public writing scaffold therefore contains nine parts and 39 chapters.
 
 The Chinese edition's full-book architecture is available in the [Chinese overview](../index.md).
 
@@ -19,7 +19,9 @@ The Chinese edition's full-book architecture is available in the [Chinese overvi
 
 | Item | Status |
 | --- | --- |
-| Outline | Nine parts and 39 chapters frozen |
-| Chinese manuscript | In progress by chapter task cards |
-| English manuscript | Batch translation after Chinese freeze |
-| Planned submission | Springer, November 30, 2026 |
+| Proposal format | Handbook |
+| Proposal outline | Parts I–VIII, Chapters 1–35 |
+| Team manuscript plan | Nine parts, 39 chapters; Part IX (Chapters 36–39) retained as an engineering-practice extension |
+| Chinese manuscript | Planned freeze: November 30, 2026 |
+| English manuscript | Batch translation and review after the Chinese freeze in December |
+| Planned submission | Springer, December 30, 2026 |
