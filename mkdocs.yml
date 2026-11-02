@@ -1,9 +1,9 @@
-site_name: 智能体人工智能系统：从大语言模型到现实世界智能体
-site_url: https://datascale-ai.github.io/Agentic_AI_Systems_book/
-site_description: 从大语言模型到现实世界智能体的系统工程书稿
+site_name: 智能体人工智能系统工程：从大语言模型到生产级智能体
+site_url: https://datascale-ai.github.io/engineering-agentic-ai-systems-book/
+site_description: 从大语言模型到生产级智能体的系统工程手册
 site_author: Agentic AI Systems Book Contributors
 repo_name: GitHub
-repo_url: https://github.com/datascale-ai/Agentic_AI_Systems_book/tree/main
+repo_url: https://github.com/datascale-ai/engineering-agentic-ai-systems-book/tree/main
 
 # Planning artifacts live outside docs/ and are ignored by Git; only public manuscript
 # sources under docs/ are included in the site.
@@ -51,7 +51,7 @@ plugins:
           default: true
           name: 简体中文
           build: true
-          site_name: 智能体人工智能系统：从大语言模型到现实世界智能体
+          site_name: 智能体人工智能系统工程：从大语言模型到生产级智能体
           nav:
             - 全书导览: index.md
             - 引言: reader_guide.md

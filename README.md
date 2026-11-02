@@ -1,16 +1,16 @@
 <p align="center">
-  <font size="5"><strong>📖 从大语言模型到现实世界智能体</strong></font><br>
+  <font size="5"><strong>📖 智能体人工智能系统工程</strong></font><br>
   <em>Engineering Agentic AI Systems: From LLMs to Production-Grade Agents</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/datascale-ai/Agentic_AI_Systems_book/actions/workflows/validate.yml"><img src="https://github.com/datascale-ai/Agentic_AI_Systems_book/actions/workflows/validate.yml/badge.svg" alt="Build status"></a>
+  <a href="https://github.com/datascale-ai/engineering-agentic-ai-systems-book/actions/workflows/validate.yml"><img src="https://github.com/datascale-ai/engineering-agentic-ai-systems-book/actions/workflows/validate.yml/badge.svg" alt="Build status"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-**| [中文](https://github.com/datascale-ai/Agentic_AI_Systems_book/tree/main) | English |**
+**| [中文](https://github.com/datascale-ai/engineering-agentic-ai-systems-book/tree/main) | English |**
 
-> **在线阅读**：https://datascale-ai.github.io/Agentic_AI_Systems_book/
+> **在线阅读**：https://datascale-ai.github.io/engineering-agentic-ai-systems-book/
 
 ## 简介
 
@@ -33,7 +33,7 @@
 
 本书按照智能体系统从基础能力到生产落地的依赖关系组织。前八篇、35章对应 Springer 提案目录；第九篇是团队明确保留的工程实践扩展，补足从参考实现、分层测试到持续交付的可运行学习路径。当前公开书稿按九篇、39章组织：
 
-![《智能体人工智能系统》全书架构图](docs/images/book-structure-zh.png)
+![《智能体人工智能系统工程》全书架构图](docs/images/book-structure-zh.png)
 
 *从模型交互、规划与行动，到运行时、治理和可运行工程实践的完整路线。*
 
@@ -111,7 +111,7 @@
 
 书籍网站由 MkDocs Material 构建，提供中文和英文导航。在线版本发布在 GitHub Pages：
 
-**[打开在线书籍 →](https://datascale-ai.github.io/Agentic_AI_Systems_book/)**
+**[打开在线书籍 →](https://datascale-ai.github.io/engineering-agentic-ai-systems-book/)**
 
 本地预览需要 Python 3.11+ 和 uv：
 

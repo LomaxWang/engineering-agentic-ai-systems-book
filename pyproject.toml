@@ -1,7 +1,7 @@
 [project]
-name = "agentic-ai-systems-book"
+name = "engineering-agentic-ai-systems-book"
 version = "0.1.0"
-description = "Writing scaffold and documentation site for Agentic AI Systems"
+description = "Handbook manuscript and documentation site for Engineering Agentic AI Systems"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }

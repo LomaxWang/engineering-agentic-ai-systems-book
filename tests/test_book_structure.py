@@ -69,7 +69,7 @@ def test_mkdocs_config_and_python_project_metadata_are_valid():
     assert "javascripts/extra.js" in config["extra_javascript"]
     assert config["plugins"][-1]["i18n"]["languages"][0]["locale"] == "zh"
     project = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
-    assert project["project"]["name"] == "agentic-ai-systems-book"
+    assert project["project"]["name"] == "engineering-agentic-ai-systems-book"
     assert project["project"]["requires-python"] == ">=3.11"
 
 
@@ -83,10 +83,23 @@ def test_public_book_metadata_matches_latest_proposal_and_manuscript_scope():
     assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in readme
     assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" in en
     assert "Engineering Agentic AI Systems: From LLMs to Production-Grade Agents" == english_site_name
+    assert "智能体人工智能系统工程：从大语言模型到生产级智能体" in zh
+    assert config["site_name"] == "智能体人工智能系统工程：从大语言模型到生产级智能体"
     for page in (readme, zh, en):
         assert "2026年12月30日" in page or "December 30, 2026" in page
         assert "第九篇" in page or "Part IX" in page
         assert "提案" in page or "proposal" in page.lower()
+
+
+def test_public_repository_links_use_the_renamed_slug():
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    config = yaml.safe_load((ROOT / "mkdocs.yml").read_text(encoding="utf-8"))
+    public_text = readme + (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+
+    assert "https://github.com/datascale-ai/engineering-agentic-ai-systems-book" in public_text
+    assert "https://datascale-ai.github.io/engineering-agentic-ai-systems-book/" in public_text
+    assert "Agentic_AI_Systems_book" not in public_text
+    assert config["site_url"] == "https://datascale-ai.github.io/engineering-agentic-ai-systems-book/"
 
 
 def test_sidebar_scroll_restore_script_targets_only_primary_navigation():
